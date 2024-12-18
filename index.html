@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Мета-теги для SEO -->
+    <!-- description — короткий опис, який з'являється у результатах пошуку. -->
+    <meta name="description" content="Об’єднаний каталог товарів із Instagram-магазинів для України. Замовляйте зручні і перевірені товари без комісій.">
+    <!-- keywords — ключові слова для пошукових систем. -->
+    <meta name="keywords" content="каталог товарів, купити в Instagram, товари з США, покупки онлайн, магазини без комісії">
+
+    <!-- <meta name="author" content="Skrynya Store"> -->
+    <title>Skrynya Store - Каталог товарів з Instagram для України</title>
+
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+
+            <div class="logo-title">
+                <a href="">Скриня<span>Товарів</span>
+                </a>
+            </div>
+
+         <nav class="nav">
+                <a href="">Головна</a>
+                <a href="">Каталог</a>
+                <a href="">Про нас</a>
+                <a href="">Контакти</a>
+              <button type="button" id="search-button" onclick="btnSearch()"><i class='bx bx-search-alt-2'></i></button>
+              <div id="onclick-find"></div>
+          </nav>
+
+          <div class="interaction">
+            <button type="submit" onclick="interactionButton()">Додати магазин</button>
+           </div>
+           
+<div class="authorization">
+    <button type="submit" onclick="loginUser()" id="loginUser"><i class='bx bx-user' ></i></button>
+    <button type="submit" onclick="becomeSeller()" id="becomeSeller">Стати продавцем</button>
+    </div>
+
+        </div>
+    </header>
+
+    <section class="hero-section">
+
+        <div class="div-hero-section">
+        <h1 class="hero-title">Скриня товарів</h1>
+        <img src="illustration.png" alt="Шопінг">
+        </div>
+
+        <!-- Презентація блок -->
+        <div class="present">
+<div class="title-present">
+    <!-- &nbsp;нерозривний пробєл -->
+        <h2 aria-label="Об’єднаний каталог товарів із закордонних магазинів для України">Об’єднаний каталог товарів&nbsp;<span class="animation-present"></span>
+        </h2>
+        <!-- <p>Ми об’єднуємо найкращі пропозиції з Instagram-магазинів в одному місці.</p> -->
+    </div>
+
+        <div class="list-present">
+         <div class="div1 item">
+            Зручний каталог
+         </div>  
+         <div class="div2 item">
+            Прямі переходи до продавців
+         </div>  
+         <div class="div3 item">
+            Швидке замовлення
+         </div>
+         <div class="div4 item">
+            Знайди найкращі бренди з усього світу в одному місці
+         </div>
+         <div class="div5 item ">
+           Легко замовляй товари безпосередньо через Instagram-магазини
+         </div> 
+    </div>
+      
+            
+        
+        <div>
+
+<!-- <div class="call-to-action">
+    <button type="button">Переглянути каталог</button>
+    <button type="button">Стати продавцем</button>
+</div> -->
+
+    </section>
+
+    <section class="advantages-seller">
+        <div class="advantages">
+<h2 class="title-advantages">Чому обирають нас?</h2>
+<ul class="list-advantages">
+    <li>
+        <p>Простий пошук <span>— використання фільтрів для зручного пошуку товарів.</span></p>
+    </li>
+    <li>
+        <p>Товари від перевірених продавців <span>— всі продавці ретельно перевіряються.</span></p>
+    </li>
+    <li>
+        <p>Без комісій для покупців <span>— прозорі умови без зайвих витрат.</span></p>
+    </li>
+    <li>
+        <p>Пряма доставка з Instagram <span>— замовлення безпосередньо через акаунти.</span></p>
+    </li>
+</ul>
+
+<button type="button">Переглянути каталог</button>
+<img src="thinking-illustration.png" alt="Ілюстрація чоловіка, котрий думає" width="600px" height="600px">
+
+</div>
+    <!-- </section> -->
+
+<!-- <section class="sect-for-seller"> -->
+    <div class="seller">
+        <h2 class="title-seller">
+            Продавець? Долучайтеся до нас! 
+        </h2>
+        <p>Якщо ви продаєте товари в Instagram, 
+         ми допоможемо вам знайти нових клієнтів. <br>
+         Реєструйтесь на платформі та збільшуйте продажі!</p>
+         <button type="submit" onclick="callToAction()">Додати магазин</button>
+    </div>
+<!-- <button type="submit" onclick="callToAction()">Додати магазин</button> -->
+</section>
+
+<section class="popular-category">
+<h2>Популярні категорії</h2>
+<ul class="product-card">
+<!-- можна три як карти на фоні зображення розмите-->
+<li>
+    <a href="">Одяг з США</a>
+</li>
+<li>
+     <a href="">Косметика з Європи</a>
+</li>
+<li>
+    <a href="">Аксесуари та взуття</a>
+</li>
+</ul>
+</section>
+
+
+<!-- МАЙБУТНІ ВІДГУКИ -->
+<!-- <section class="respond">
+<h2>
+    Що кажуть наші клієнти? 
+</h2>
+
+</section> -->
+
+<div class="call-subscribe">
+    <p>Підпишись на оновлення</p>
+
+    <form action="" id="subscription">
+        <input type="email"
+         placeholder="Поле для введення email ">
+         <button type="submit" onclick="btnSunscription()">Підписатися</button>
+    </form>
+</div>
+
+<footer>
+<ul>
+    <li><a href="">Про нас</a></li>
+    <li><a href="">Умови використання</a></li>
+    <li><a href="">Політика конфіденційності</a></li>
+    <li><a href="">Контакти</a></li>
+</ul>
+
+  <address class="contact">
+<a href="mailto:viktoriiavoloshyna8@gmail.com">skrynyastore@gmail.com</a>
+<a href="tel:+38000000000">+38073882083</a>
+  </address>
+
+<div class="social-links">
+   <a href="" rel="noopener noreferrer"><i class='bx bxl-instagram-alt'></i></a> 
+    <a href="" rel="noopener noreferrer"><i class='bx bxl-gmail'></i></a>
+ <a href="" rel="noopener noreferrer"><i class='bx bxl-telegram'></i></a>
+   <a href="" rel="noopener noreferrer"> <i class='bx bxl-whatsapp-square'></i></a>
+</div>
+</footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

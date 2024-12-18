@@ -1,0 +1,586 @@
+
+    /* СИНІЙ */
+    /* color: #4f47ff;  */
+    /* ЧОРНИЙ */
+    /* color: #252432; */
+    /* СІРИЙ */
+    /* color: #8987A1; */
+    /* БІЛИЙ */
+    /* color: #E4ECFF; */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    cursor: pointer;  
+    background: #4f47ff;
+   
+    color: #E4ECFF; 
+    border: none;
+}
+
+/* button:hover{
+    transform: scale(1.1,1.1);
+} */
+
+
+a{
+text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul{
+    list-style-type: none;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color:#e4ecff;
+    color: #252432;    ;
+}
+
+.logo-title a{
+    color: #4f47ff; 
+font-weight: bold;
+font-size: 1.25rem;
+
+animation: color-change-2x 2s linear infinite alternate both;
+	 animation: color-change-2x 2s linear infinite alternate both;
+
+}
+@-webkit-keyframes color-change-2x {
+    0% {
+      color: #1985ea;
+    }
+    100% {
+     color: #4f47ff;
+    }
+  }
+  @keyframes color-change-2x {
+    0% {
+     color: #1985ea;
+    }
+    100% {
+     color: #4f47ff;
+    }
+  }
+
+
+
+
+
+/* Хедер */
+.header{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    /* margin-bottom: 20px;
+    margin-bottom: 44px; */
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 68px;
+}
+
+.nav{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    /* gap: 40px; */
+    background-color: #ffffff;
+    padding: 0.1875rem 0.5rem;
+    justify-content: flex-start;
+    /* gap: 40px; */
+    border-radius: 23px;
+    /* margin: 15px 6px 15px 6px; це відновити побокам */
+    /* align-content: center; */
+    /* text-align: center; */
+
+}
+.nav a{
+color: #8987A1;
+font-weight: 300;
+margin: 15px;
+transition: ease 0.25s;
+}
+
+.nav a:hover{
+    color: #4f47ff;
+    /* font-weight: 400; */
+    transform: scale(1.1,1.1);
+    }
+
+    .nav button{
+        color: #E4ECFF; 
+        width: 29px;
+        height: 28px;
+        border-radius: 100%;
+        align-items: center;
+        padding: 7px;
+   margin-top: 0.6625rem;
+        transition: ease 0.40s;
+     margin-left: 55px;
+    }
+
+.nav button:hover{
+        transform: scale(1.1,1.1);
+}
+
+/* JS */
+#onclick-find input{
+    border: none;
+    background-color: #f5f9ff;
+    border-radius: 8px;
+    padding: 0.625rem;
+    width: 20.25rem;
+    /* align-content: center; */
+    margin-top: 0.4rem;
+   outline: none;
+}
+#onclick-find button.close {
+    color: #E4ECFF;
+    width: 4.5625rem;
+    height: 1.75rem;
+    border-radius: 0.625rem;
+    align-items: center;
+    /* padding: 7px; */
+    margin-top: 0.6625rem;
+    transition: ease 0.40s;
+    margin-left: 0.375rem;
+}
+
+
+
+
+
+
+
+
+
+    .interaction button{
+        border-radius: 15px;
+        padding: 10px;
+        text-align: center;
+        transition: ease 0.40s;
+    }
+
+    .interaction button:hover{
+        transform: scale(1.1,1.1);
+}
+
+    #loginUser{
+        width: 29px;
+        height: 28px;
+        border-radius: 100%;
+        align-items: center;
+        padding: 7px;
+        transition: ease 0.40s;
+    }
+
+    #loginUser:hover{
+        transform: scale(1.1,1.1);
+}
+  
+    #becomeSeller{
+        background: none;
+     margin-left: 12px;
+        color: #8987A1;
+        transition: ease 0.25s;
+    }
+    
+    #becomeSeller:hover{
+   
+        color: #4f47ff;
+        }
+
+        
+        /* HERO-SECTION */
+        h1{
+            text-align: center;
+            font-size: 9.75rem;
+            font-weight: 900;
+        }
+
+        .div-hero-section{
+            display: flex ;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 113px;
+        }
+     
+        .div-hero-section img{
+            border-radius: 20px;
+            width: 97%;
+            background-color: #4f47ff;;
+            /* filter: brightness(0.79) contrast(0.9) grayscale(0.17) ; */
+        }
+      
+
+        /* Презентація блок */
+        .present{
+background-image: url("-pack-people-illustrations.webp"),  url("people-illustrations.webp"),url("online-shopping-illustration.webp");
+background-repeat: no-repeat;
+background-position:  top left, top center, top right ;
+
+        }
+
+
+           
+
+        .div1 {grid-area: 1/1/2/2 ; }
+        .div2 { grid-area: 2/2/3/3 ; }
+        .div3 { grid-area:1/3/2/4 ; }
+        .div4 { grid-area: 2/4/3/5 ; }
+        .div5 { grid-area: 1/5/2/6 ; }
+
+.item{
+    text-align: center;
+    align-content: center;
+    width: 300px;
+    border-radius: 10px;
+    background-color: white;
+    height: 143px;
+    padding: 10px;
+   
+}
+                
+.list-present {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 20px;
+    position: relative;
+}
+
+.item {
+    text-align: center;
+    align-content: center;
+    font-weight: 700;
+    letter-spacing: 2.3px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: white;
+    /* box-shadow: inset -32px -32px 64px #e8ecf7,
+            inset 32px 32px 64px #edf5ff; */
+    height: 143px;
+    padding: 10px;
+    opacity: 0;
+    color: #464646;;
+    transform: translateY(50px);
+    animation: wave 3s ease-in-out infinite; /* Виконання анімації безкінечно */
+}
+
+.item::before{
+content:"СТ";
+position: absolute;
+color: #4f47ff;
+background-color: #eef1f8;
+font-size: 20px;
+top: 20px;
+}
+
+.item::content
+
+/* Затримки для кожного елемента */
+.div1 { animation-delay: 0s; }
+.div2 { animation-delay: 0.2s; }
+.div3 { animation-delay: 0.4s; }
+.div4 { animation-delay: 0.6s; }
+.div5 { animation-delay: 0.8s; }
+
+/* Оновлена анімація */
+@keyframes wave {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Початкове положення */
+    }
+    25% {
+        opacity: 1;
+        transform: translateY(-10px); /* Підняти на деяку висоту */
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0); /* Встановити на середину */
+    }
+    75% {
+        opacity: 1;
+        transform: translateY(-10px); /* Знову підняти */
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(50px); /* Повернути до початкового стану */
+    }
+}
+
+
+
+        .title-present h2{
+            text-align: center;
+            font-size: 2.5rem;
+            font-size: 3.75rem;
+            font-weight: 900;
+            margin-bottom: 3.4375rem;
+        }
+
+
+/* АНІМАЦІЯ ТАЙЙПІНГУ */
+     
+         /* @keyframes typing {
+            0%, 12.5% { content: ""; }
+            1.79%, 11.61% { content: "і"; }
+            3.57%, 10.71% { content: "із"; }
+            5.36%, 9.82% { content: "із "; }
+            7.14%, 8.93% { content: "із з"; }
+            8.93%, 8.04% { content: "із за"; }
+            10.71%, 7.14% { content: "із зак"; }
+            12.50%, 6.25% { content: "із зако"; }
+            14.29%, 5.36% { content: "із закор"; }
+            16.07%, 4.46% { content: "із закорд"; }
+            17.86%, 3.57% { content: "із закордо"; }
+            19.64%, 2.68% { content: "із закордон"; }
+            21.43%, 1.79% { content: "із закордонн"; }
+            23.21%, 0.89% { content: "із закордонни"; }
+            25%, 0% { content: "із закордонних"; }
+            30%, 80% { content: "із закордонних "; }
+            35%, 75% { content: "із закордонних м"; }
+            40%, 70% { content: "із закордонних ма"; }
+            45%, 65% { content: "із закордонних маг"; }
+            50%, 60% { content: "із закордонних магаз"; }
+            55%, 55% { content: "із закордонних магази"; }
+            60%, 50% { content: "із закордонних магазин"; }
+            65%, 45% { content: "із закордонних магазині"; }
+            70%, 40% { content: "із закордонних магазинів"; }
+            75%, 35% { content: "із закордонних магазинів "; }
+            80%, 30% { content: "із закордонних магазинів д"; }
+            85%, 25% { content: "із закордонних магазинів дл"; }
+            90%, 20% { content: "із закордонних магазинів для"; }
+            95%, 15% { content: "із закордонних магазинів для "; }
+            100%, 0% { content: "із закордонних магазинів для України"; }
+          }
+          
+          @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+          } */
+          
+          .animation-present {
+            color:#4f47ff;
+          } 
+/*           
+          .animation-present::before {
+            content: "";
+            animation: typing 13.5s infinite;
+          } */
+          
+          /* .animation-present::after {
+            content: "";
+            border-right: 1px solid var(--caret);
+            animation: blink 0.5s linear infinite;
+          } */
+          
+
+          .call-to-action button{
+            padding: 0.625rem;
+            font-weight: 700;
+            border-radius: 10px;
+            transition: ease 0.40s;
+          }
+         
+
+          .call-to-action button:nth-child(2){
+        
+            animation: shake-bottom 0.8s infinite;
+          }
+
+
+
+          .call-to-action button:hover{
+            transform: scale(1.1,1.1);
+          }
+
+          @keyframes shake-bottom{
+            0%,
+            100% {
+             transform: rotate(0deg);
+                      transform: rotate(0deg);
+              transform-origin: 50% 100%;
+                      transform-origin: 50% 100%;
+            }
+            10% {
+              transform: rotate(2deg);
+                      transform: rotate(2deg);
+            }
+            20%,
+            40%,
+            60% {
+              transform: rotate(-4deg);
+                      transform: rotate(-4deg);
+            }
+            30%,
+            50%,
+            70% {
+              transform: rotate(4deg);
+                      transform: rotate(4deg);
+            }
+            80% {
+            transform: rotate(-2deg);
+                      transform: rotate(-2deg);
+            }
+            90% {
+              transform: rotate(2deg);
+                      transform: rotate(2deg);
+            }
+          }
+          @keyframes shake-bottom {
+            0%,
+            100% {
+            transform: rotate(0deg);
+                      transform: rotate(0deg);
+            transform-origin: 50% 100%;
+                      transform-origin: 50% 100%;
+            }
+            10% {
+            transform: rotate(2deg);
+                      transform: rotate(2deg);
+            }
+            20%,
+            40%,
+            60% {
+             transform: rotate(-4deg);
+                      transform: rotate(-4deg);
+            }
+            30%,
+            50%,
+            70% {
+           transform: rotate(4deg);
+                      transform: rotate(4deg);
+            }
+            80% {
+           transform: rotate(-2deg);
+                      transform: rotate(-2deg);
+            }
+            90% {
+             transform: rotate(2deg);
+                      transform: rotate(2deg);
+            }
+          }
+          
+          /* ЧОМУ ОБИРАЮТЬ НАС */
+          .advantages-seller{
+            position: relative;
+            display: flex
+        ;
+            background-color: #7568fd;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px 20px;
+            width: 97%;
+            border-radius: 20px;
+            padding: 126px;
+            margin: 65px 27px;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            /* height: 825px; */
+        }
+           
+          
+          .advantages-seller h2{
+            font-size: 2.5rem;
+          }
+
+          .advantages{
+                padding: 20px;
+    color: white;
+    display: flex
+;
+    flex-direction: column;
+    align-items: start;
+    gap: 46px;
+    margin-right: 404px;
+    margin-top: -50px;
+    font-size: 1.2rem;
+    line-height: 45px;
+    background-color: #727efd;
+    border-radius: 29px;
+    width: 33.19rem;
+}
+          
+
+          .advantages button{
+            padding: 16px;
+            border-radius: 10px;
+            font-size: 1.3rem;
+            background: #f89726;
+            transition: 1s ease;
+          }
+          .advantages button:hover{
+            background-color: #e24b00 ;
+          }
+
+          .advantages img{
+            position: absolute;
+            top: 0;
+         right: 0;
+          }
+
+          .seller {
+            background-blend-mode: overlay;
+            flex-wrap: wrap;
+            /* height: 500px; */
+            /* height: 89%; */
+            color: rgb(255 255 255);
+            background-color: #727efd;
+            padding: 39px;
+            width: 44%;
+            /* position: absolute; */
+            display: flex
+        ;
+            margin-left: 370px;
+            flex-direction: column;
+            gap: 33px;
+            /* margin-top: 122px; */
+            line-height: 49px;
+            /* align-content: center; */
+            text-align: center;
+            /* border: solid orange 2px; */
+            border-radius: 52px;
+          }
+         
+          .seller button{
+            padding: 15px;
+            border-radius: 10px;
+            width: 100%;
+            background: #fbfbfb;
+            color: #2b2a2a;
+            border: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Плавні переходи */
+          }
+
+          .seller button:hover{
+         animation: colorbtn 1s linear infinite alternate both;
+         color: #e4ecff;
+         transform: scale(1.05); /* Збільшує кнопку на 5% */
+          }
+          
+          @keyframes colorbtn{
+0%{
+    background-color: #bc6dfd;
+
+}
+100%{
+    background-color: #c49afa;
+}
+          }
